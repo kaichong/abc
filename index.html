@@ -6,13 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>黄暴躁作品</title>
   <style>
-
+    * { margin: 0; padding: 0;}
+    .banner { width: 100%; margin: 0 auto; }
+    .banner > img { width: 100%; }
+    .item-wrap { width: 90%; margin: 20px auto 0;}
+    .item { padding: 10px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #f0f0f0; border-bottom: 1px solid #f0f0f0; color: #000; text-decoration: none;}
+    .item:last-child { border-top: none; }
+    .item img {width: 22px;}
   </style>
 </head>
 <body>
-  <a href="./template"><img src="./images/qq.jpg" /></a>
-  <a href="./b">跳到b页面</a>
+  <div class="banner">
+    <img src="./images/ban.jpg" />
+  </div>
+  <div class="item-wrap">
+    <a href="./b" class="item">
+      <span>文案类</span>
+      <img src="./images/arrow-right.png" alt="">
+    </a>
+    <a href="./b" class="item">
+      <span>活动类</span>
+      <img src="./images/arrow-right.png" alt="">
+    </a>
+  </div>
+  <!-- <a href="./template"><img src="./images/qq.jpg" /></a>
+  <a href="./b">跳到bb页面</a>
   <img src="./images/tx.jpg" />
-  <img src="./images/qq.jpg" />
+  <img src="./images/qq.jpg" /> -->
 </body>
 </html>
